@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sameer Imtiaz | Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script defer src="js/main.js"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-2x6VZ1YF4M+EZ7V4V1JZ4f6qHeJkK1W7UW2XZ2K1wD2QgMZyqZg0kHQbV7l8W5DjO2zKyojQAk6VFlfYzW0N1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Sameer Imtiaz</div>
+      <div class="navbar-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <h1>Sameer Imtiaz</h1>
+      <p class="subtitle">AI-Powered Web Developer & Prompt Engineer</p>
+      <p class="lead">Building cutting-edge websites, apps, and AI-integrated solutions that drive results and generate sales.</p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+      <div class="mouse-scroll">
+        <div class="scroll-icon"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-content">
+        <div class="bio">
+          <h3>Hi, I'm Sameer Imtiaz</h3>
+          <p>I'm a full-stack developer and AI specialist with a passion for creating digital experiences that combine cutting-edge technology with beautiful design. With expertise in prompt engineering and AI integration, I help businesses leverage the power of artificial intelligence to drive growth and innovation.</p>
+          <p>My journey in web development started 8+ years ago, and since then I've worked on over 50 projects ranging from simple landing pages to complex web applications. I specialize in creating AI-powered solutions that not only look great but also deliver measurable business results.</p>
+          <div class="highlight">
+            <h4>What Sets Me Apart</h4>
+            <p>While many developers focus solely on code, I take a holistic approach that combines technical excellence with business strategy. My expertise in AI and prompt engineering allows me to create intelligent systems that adapt and evolve with your business needs.</p>
+          </div>
+        </div>
+        <div class="skills">
+          <h3>Technical Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS3</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">React</div>
+            <div class="skill-card">Node.js</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">AI Integration</div>
+            <div class="skill-card">Prompt Engineering</div>
+            <div class="skill-card">Web3</div>
+            <div class="skill-card">Landing Page Optimization</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="ai">AI Integration</button>
+        <button class="filter-btn" data-filter="landing">Landing Pages</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="web ai">
+          <img src="images/project1.jpg" alt="Project 1" />
+          <div class="project-info">
+            <h3>AI-Powered E-commerce Platform</h3>
+            <p>Developed a full-stack e-commerce solution with AI-driven product recommendations and chatbot support.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">AI Integration</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="landing">
+          <img src="images/project2.jpg" alt="Project 2" />
+          <div class="project-info">
+            <h3>High-Converting Landing Page</h3>
+            <p>Created a landing page that increased conversion rates by 150% through strategic design and AI-optimized copy.</p>
+            <div class="project-tags">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">A/B Testing</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="ai">
+          <img src="images/project3.jpg" alt="Project 3" />
+          <div class="project-info">
+            <h3>Prompt Engineering Tool</h3>
+            <p>Developed an AI-powered prompt optimization tool that helps users create more effective prompts for LLMs.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">AI</span>
+              <span class="tag">NLP</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="web">
+          <img src="images/project4.jpg" alt="Project 4" />
+          <div class="project-info">
+            <h3>Web3 Marketplace</h3>
+            <p>Built a decentralized marketplace using blockchain technology with integrated AI recommendation system.</p>
+            <div class="project-tags">
+              <span class="tag">Web3</span>
+              <span class="tag">React</span>
+              <span class="tag">AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sales Section -->
+  <section class="section" id="sales">
+    <div class="container">
+      <div class="section-header">
+        <h2>Sales & Achievements</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="sales-stats">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-dollar-sign"></i></div>
+          <div class="stat-number">$2.1M+</div>
+          <div class="stat-label">Generated in Sales</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Completed Projects</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-user-tie"></i></div>
+          <div class="stat-number">30+</div>
+          <div class="stat-label">Satisfied Clients</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-rocket"></i></div>
+          <div class="stat-number">150%</div>
+          <div class="stat-label">Average ROI Increase</div>
+        </div>
+      </div>
+      <div class="sales-achievements">
+        <h3>Notable Achievements</h3>
+        <ul>
+          <li><i class="fas fa-trophy"></i> Created a landing page that generated $500k+ in sales within 3 months</li>
+          <li><i class="fas fa-trophy"></i> Developed an AI-powered upsell system that increased average order value by 40%</li>
+          <li><i class="fas fa-trophy"></i> Built a web3 platform that attracted 10,000+ active users in first 6 months</li>
+          <li><i class="fas fa-trophy"></i> Optimized conversion rates for multiple SaaS products, achieving 200%+ growth</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Services</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Custom websites and web applications built with modern technologies that are fast, responsive, and scalable.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-robot"></i></div>
+          <h3>AI Integration</h3>
+          <p>Implementing artificial intelligence solutions that automate processes, improve decision making, and enhance user experiences.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-magic"></i></div>
+          <h3>Prompt Engineering</h3>
+          <p>Creating optimized prompts for large language models to achieve specific business goals and improve AI performance.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Landing Page Optimization</h3>
+          <p>Designing and developing high-converting landing pages that drive leads, sales, and business growth.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-cogs"></i></div>
+          <h3>Automation</h3>
+          <p>Building intelligent systems that automate repetitive tasks and streamline business processes using AI.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>Web3 Development</h3>
+          <p>Creating decentralized applications and blockchain-based solutions that leverage the power of distributed systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Client Testimonials</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Working with Sameer was an absolute game-changer for our business. His expertise in AI and web development helped us increase our conversion rates by 150% in just three months. The landing pages he created are not only visually stunning but also incredibly effective at converting visitors into customers."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="images/client1.jpg" alt="Client 1" />
+            <div>
+              <strong>Jane Smith</strong>
+              <div>CEO, TechStart Inc.</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Sameer's prompt engineering skills are unparalleled. He helped us develop an AI-powered customer support system that reduced our response time by 70% while maintaining high quality. His ability to combine technical expertise with business strategy is truly impressive."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="images/client2.jpg" alt="Client 2" />
+            <div>
+              <strong>Michael Johnson</strong>
+              <div>CTO, AI Solutions</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"I've worked with many developers over the years, but Sameer stands out for his creativity, technical skill, and business acumen. He delivered a web3 marketplace that exceeded our expectations and has been instrumental in our growth. His attention to detail and ability to understand our needs is exceptional."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="images/client3.jpg" alt="Client 3" />
+            <div>
+              <strong>Sarah Williams</strong>
+              <div>Founder, Blockchain Innovations</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Me</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>Have a project in mind or need help with your business? I'd love to hear from you. Whether you need a custom website, AI integration, or help with prompt engineering, I'm here to help you succeed.</p>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>Dhaka, Bangladesh</div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>sameerimtiaz@example.com</div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>+880 1700 000000</div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/Sameer.Imz/" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sameerimtiazz/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sameer-imtiaz-b256b8359/" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/sameer-dev-stack/Blueprint_Funnel" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <textarea rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary send-button">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Sameer Imtiaz</div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/Sameer.Imz/" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/sameerimtiazz/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/sameer-imtiaz-b256b8359/" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/sameer-dev-stack/Blueprint_Funnel" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2025 Sameer Imtiaz. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2>Let's Work Together</h2>
+      <p>Ready to take your business to the next level with a custom solution? Fill out the contact form or send me an email to discuss your project. I'll help you create something amazing!</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>sameerimtiaz@example.com</div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>+880 1700 000000</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

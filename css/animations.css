@@ -1,0 +1,42 @@
+/* Enhanced navigation animation with modern effects */
+@keyframes navLinkHover {
+  0% {
+    width: 0;
+    transform: scaleX(0.8);
+    box-shadow: 0 0 5px rgba(0, 247, 255, 0);
+  }
+  50% {
+    width: 100%;
+    transform: scaleX(1.05);
+    box-shadow: 0 0 10px rgba(0, 247, 255, 0.3);
+  }
+  100% {
+    width: 100%;
+    transform: scaleX(1);
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: radial-gradient(circle, #00f7ff 0%, #007bff 70%, transparent 100%);
+  left: 0;
+  bottom: -6px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  opacity: 0.9;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  animation: navLinkHover 0.4s ease forwards;
+  transform-origin: left;
+}
+
+/* Add pulse effect for active state */
+.nav-link.active::after {
+  animation: navLinkHover 0.5s ease infinite alternate;
+}
