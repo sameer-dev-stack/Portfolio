@@ -1,0 +1,4 @@
+node_modules/
+.env
+contact_submissions.log
+contact_submissions.csv

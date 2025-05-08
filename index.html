@@ -7,9 +7,12 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/animations.css" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
   <script defer src="js/main.js"></script>
+  <script defer src="js/three-hero-animation.js"></script>
+  <script defer src="js/three-scroll-accents.js"></script>
   <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-2x6VZ1YF4M+EZ7V4V1JZ4f6qHeJkK1W7UW2XZ2K1wD2QgMZyqZg0kHQbV7l8W5DjO2zKyojQAk6VFlfYzW0N1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
@@ -34,6 +37,7 @@
 
   <!-- Hero Section -->
   <section class="hero" id="home">
+    <div id="hero-canvas-container"></div>
     <div class="container hero-content">
       <h1>Sameer Imtiaz</h1>
       <p class="subtitle">AI-Powered Web Developer & Prompt Engineer</p>
@@ -57,6 +61,7 @@
       </div>
       <div class="about-content">
         <div class="bio">
+          <img src="Assets/Sameer.jpg" alt="Sameer Imtiaz" class="profile-photo">
           <h3>Hi, I'm Sameer Imtiaz</h3>
           <p>I'm a full-stack developer and AI specialist with a passion for creating digital experiences that combine cutting-edge technology with beautiful design. With expertise in prompt engineering and AI integration, I help businesses leverage the power of artificial intelligence to drive growth and innovation.</p>
           <p>My journey in web development started 8+ years ago, and since then I've worked on over 50 projects ranging from simple landing pages to complex web applications. I specialize in creating AI-powered solutions that not only look great but also deliver measurable business results.</p>
@@ -84,7 +89,7 @@
     </div>
   </section>
 
-
+  <div class="scroll-accent-container" data-accent-type="cube"></div>
   <!-- Projects Section -->
   <section class="section" id="projects">
     <div class="container">
@@ -100,7 +105,7 @@
       </div>
       <div class="projects-grid">
         <div class="project-card" data-category="web ai">
-          <img src="images/project1.jpg" alt="Project 1" />
+          <img src="Assets/Project_1.png" alt="Project 1" />
           <div class="project-info">
             <h3>AI-Powered E-commerce Platform</h3>
             <p>Developed a full-stack e-commerce solution with AI-driven product recommendations and chatbot support.</p>
@@ -112,7 +117,7 @@
           </div>
         </div>
         <div class="project-card" data-category="landing">
-          <img src="images/project2.jpg" alt="Project 2" />
+          <img src="Assets/Project_2.png" alt="Project 2" />
           <div class="project-info">
             <h3>High-Converting Landing Page</h3>
             <p>Created a landing page that increased conversion rates by 150% through strategic design and AI-optimized copy.</p>
@@ -124,7 +129,7 @@
           </div>
         </div>
         <div class="project-card" data-category="ai">
-          <img src="images/project3.jpg" alt="Project 3" />
+          <img src="Assets/Project_3.png" alt="Project 3" />
           <div class="project-info">
             <h3>Prompt Engineering Tool</h3>
             <p>Developed an AI-powered prompt optimization tool that helps users create more effective prompts for LLMs.</p>
@@ -135,23 +140,12 @@
             </div>
           </div>
         </div>
-        <div class="project-card" data-category="web">
-          <img src="images/project4.jpg" alt="Project 4" />
-          <div class="project-info">
-            <h3>Web3 Marketplace</h3>
-            <p>Built a decentralized marketplace using blockchain technology with integrated AI recommendation system.</p>
-            <div class="project-tags">
-              <span class="tag">Web3</span>
-              <span class="tag">React</span>
-              <span class="tag">AI</span>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
   <!-- Sales Section -->
+  <!-- No accent here for variety -->
   <section class="section" id="sales">
     <div class="container">
       <div class="section-header">
@@ -192,6 +186,7 @@
     </div>
   </section>
 
+  <div class="scroll-accent-container" data-accent-type="torus"></div>
   <!-- Services Section -->
   <section class="section" id="services">
     <div class="container">
@@ -235,6 +230,7 @@
   </section>
 
   <!-- Testimonials Section -->
+   <!-- No accent here for variety -->
   <section class="section" id="testimonials">
     <div class="container">
       <div class="section-header">
@@ -244,13 +240,13 @@
       <div class="testimonials-grid">
         <div class="testimonial-card">
           <div class="testimonial-content">
-            <p>"Working with Sameer was an absolute game-changer for our business. His expertise in AI and web development helped us increase our conversion rates by 150% in just three months. The landing pages he created are not only visually stunning but also incredibly effective at converting visitors into customers."</p>
+            <p>"Working with Sameer was an absolute game-changer for our business. His expertise in AI and web development helped us increase our conversion rates by 150% in just three months. The landing pages he created are not only visually stunning but also incredibly effective at converting visitors into customers."</p> <!-- Assuming quote stays the same for now -->
           </div>
           <div class="testimonial-author">
-            <img src="images/client1.jpg" alt="Client 1" />
+            <img src="Assets/tyree mcghee founder of premier elite sports academy.jpg" alt="Tyree McGhee" />
             <div>
-              <strong>Jane Smith</strong>
-              <div>CEO, TechStart Inc.</div>
+              <strong>Tyree McGhee</strong>
+              <div>Founder, Premier Elite Sports Academy</div>
             </div>
           </div>
         </div>
@@ -259,7 +255,7 @@
             <p>"Sameer's prompt engineering skills are unparalleled. He helped us develop an AI-powered customer support system that reduced our response time by 70% while maintaining high quality. His ability to combine technical expertise with business strategy is truly impressive."</p>
           </div>
           <div class="testimonial-author">
-            <img src="images/client2.jpg" alt="Client 2" />
+            <img src="Assets/Michael Johnson.png" alt="Michael Johnson" />
             <div>
               <strong>Michael Johnson</strong>
               <div>CTO, AI Solutions</div>
@@ -271,7 +267,7 @@
             <p>"I've worked with many developers over the years, but Sameer stands out for his creativity, technical skill, and business acumen. He delivered a web3 marketplace that exceeded our expectations and has been instrumental in our growth. His attention to detail and ability to understand our needs is exceptional."</p>
           </div>
           <div class="testimonial-author">
-            <img src="images/client3.jpg" alt="Client 3" />
+            <img src="Assets/Sarah Williams.png" alt="Sarah Williams" />
             <div>
               <strong>Sarah Williams</strong>
               <div>Founder, Blockchain Innovations</div>
@@ -282,6 +278,7 @@
     </div>
   </section>
 
+  <div class="scroll-accent-container" data-accent-type="sphere"></div>
   <!-- Contact Section -->
   <section class="section" id="contact">
     <div class="container">
@@ -299,29 +296,30 @@
           </div>
           <div class="contact-item">
             <i class="fas fa-envelope"></i>
-            <div>sameerimtiaz@example.com</div>
+            <div>sameerimtiaz@mail.com</div>
           </div>
           <div class="contact-item">
             <i class="fas fa-phone"></i>
-            <div>+880 1700 000000</div>
+            <div>+8801620729366</div>
           </div>
           <div class="social-links">
             <a href="https://www.facebook.com/Sameer.Imz/" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/sameerimtiazz/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/sameer-imtiaz-b256b8359/" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://github.com/sameer-dev-stack/Blueprint_Funnel" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/14373454980" class="social-link" target="_blank"><i class="fab fa-whatsapp"></i></a> <!-- WhatsApp Button Added -->
           </div>
         </div>
         <div class="contact-form">
-          <form>
+          <form action="https://formspree.io/f/xanojleq" method="POST">
             <div class="form-group">
-              <input type="text" placeholder="Your Name" required />
+              <input type="text" name="name" placeholder="Your Name" required />
             </div>
             <div class="form-group">
-              <input type="email" placeholder="Your Email" required />
+              <input type="email" name="email" placeholder="Your Email" required />
             </div>
             <div class="form-group">
-              <textarea rows="5" placeholder="Your Message" required></textarea>
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary send-button">Send Message</button>
           </form>
@@ -340,6 +338,7 @@
           <a href="https://www.instagram.com/sameerimtiazz/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
           <a href="https://www.linkedin.com/in/sameer-imtiaz-b256b8359/" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           <a href="https://github.com/sameer-dev-stack/Blueprint_Funnel" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://wa.me/14373454980" class="social-link" target="_blank"><i class="fab fa-whatsapp"></i></a> <!-- WhatsApp Button Added -->
         </div>
       </div>
       <div class="copyright">

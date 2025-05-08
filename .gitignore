@@ -1,0 +1,13 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Node modules (if you ever add build tools)
+node_modules/
+
+# Log files (though we removed the backend one)
+*.log
+
+# IDE/Editor directories
+.vscode/
+.idea/

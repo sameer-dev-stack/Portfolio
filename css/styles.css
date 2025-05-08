@@ -118,10 +118,23 @@ p {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  /* background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%); */ /* Commented out to let canvas show */
   padding-top: 70px;
   position: relative;
   overflow: hidden;
+}
+
+#hero-canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Behind hero-content and hero::before */
+}
+
+#hero-canvas-container canvas {
+  display: block; /* Ensure canvas takes up full container */
 }
 
 .hero::before {
@@ -305,6 +318,27 @@ h1 {
   }
 }
 
+/* Scroll Accent Container Styles */
+.scroll-accent-container {
+  width: 100%;
+  height: 80px; /* Adjust height as needed */
+  position: relative; /* Needed for canvas positioning */
+  overflow: hidden; /* Prevent accents spilling out */
+  margin: -40px 0; /* Overlap slightly with sections for smoother transition */
+  z-index: 0; /* Behind section content */
+  pointer-events: none; /* Don't interfere with mouse events */
+}
+
+.scroll-accent-container canvas {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100% !important; /* Ensure canvas fills container */
+  height: 100% !important;
+}
+
+
 /* Section Styles */
 .section {
   padding: 100px 0;
@@ -357,6 +391,23 @@ h1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 4rem;
+  align-items: start; /* Align items to the start for better photo placement */
+}
+
+.bio {
+  position: relative; /* Optional: if needed for pseudo-elements later */
+}
+
+.profile-photo {
+  float: left;
+  width: 150px; /* Adjust size as needed */
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensure image covers the area well */
+  margin-right: 2rem; /* Space between photo and text */
+  margin-bottom: 1rem; /* Space below photo */
+  border: 3px solid #00f7ff; /* Optional border matching theme */
+  box-shadow: 0 0 15px rgba(0, 247, 255, 0.2); /* Optional glow */
 }
 
 .bio h3 {

@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const form = document.querySelector('.contact-form');
   if (form) {
     form.addEventListener('submit', function(e) {
-      e.preventDefault();
+      // e.preventDefault(); // REMOVED: Allow default form submission to Formspree
       
       // Simple validation
       let isValid = true;
@@ -124,12 +124,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
       
-      // If form is valid
-      if (isValid) {
-        // Here you would typically send the form data to a server
-        alert('Message sent successfully!');
-        form.reset();
+      // If form is NOT valid, prevent submission
+      if (!isValid) {
+          e.preventDefault(); // Prevent submission ONLY if validation fails
+          alert('Please fill in all required fields correctly.');
       }
+      // If form IS valid, the browser will proceed with the default submission to the Formspree URL in the action attribute.
+      // No need for form.reset() or alert() here, Formspree handles the confirmation page.
     });
   }
 });
